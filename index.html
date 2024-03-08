@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earpods Showcase</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            text-align: center;
+            padding-bottom: 50px; /* Adjust the value based on the height of your footer */
+        }
+
+        p {
+            font-weight: bolder;
+            color: #030303;
+        }
+
+        h2 {
+            color: #030303;
+            filter: brightness(80%); 
+        }
+
+        header {
+            background-color: #050606;
+            color: white;
+            padding: 1em;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-background {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            padding: 5em 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cta-button {
+            background-color: #56565600;
+            color: white;
+            padding: 1em 2em;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #060606;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        .feature {
+            margin: 2em;
+            padding: 2em;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: left;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #090909;
+            color: white;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .form-container {
+            font-weight: bold;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 0.5em;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 1em;
+            padding: 0.5em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #030303;
+            color: white;
+            padding: 0.8em 1.5em;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #64636300;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Explore Earpods</h1>
+    </header>
+
+    <div class="hero">
+        <img src="ap.jpg" alt="Earpods Background" class="hero-background">
+        <div class="hero-content">
+            <h2>Discover Premium Sound</h2>
+            <p>Introducing our latest Earpods - wireless, effortless, magical.</p>
+            <a href="#features" class="cta-button">Explore Features</a>
+        </div>
+    </div>
+
+    <section id="features">
+        <h2>Key Features</h2>
+
+        <div class="feature">
+            <h3>Wireless Connectivity</h3>
+            <p>Experience real freedom with true wireless connectivity to any device.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Exceptional Sound Quality</h3>
+            <p>Deliver crystal clear sound quality, deep bass, and impressive noise cancellation.</p>
+        </div>
+
+        <!-- Add more features as needed -->
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <div class="form-container">
+            <form action method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <h3>&copy; 2024 Earpods Inc. All rights reserved.</h3>
+    </footer>
+</body>
+
+</html>
